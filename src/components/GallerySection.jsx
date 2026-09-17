@@ -7,7 +7,7 @@ export default function GallerySection({ images }) {
   return (
     <section id="gallery" className="py-20 border-b border-zinc-800/60 bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-black uppercase tracking-wider text-lime-600 mb-10 flex items-center gap-3">
+        <h2 className="text-3xl font-black uppercase tracking-wider text-cyan-600 mb-10 flex items-center gap-3">
           <Image /> Galería
         </h2>
 
@@ -16,7 +16,7 @@ export default function GallerySection({ images }) {
             <div 
               key={idx} 
               onClick={() => setSelectedImage(img)}
-              className="h-48 bg-zinc-900 rounded cursor-pointer overflow-hidden border border-zinc-800 hover:border-lime-600 transition"
+              className="h-48 bg-zinc-900 rounded cursor-pointer overflow-hidden border border-zinc-800 hover:border-cyan-600 transition"
             >
               <img src={img} alt={`Gallery ${idx}`} className="w-full h-full object-cover hover:scale-110 transition duration-300" />
             </div>

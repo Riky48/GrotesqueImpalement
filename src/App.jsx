@@ -51,7 +51,7 @@ export default function App() {
 };
 
   return (
-    <div className="bg-zinc-950 text-zinc-100 min-h-screen font-sans selection:bg-lime-900 selection:text-white">
+    <div className="bg-zinc-950 text-zinc-100 min-h-screen font-sans selection:bg-cyan-900 selection:text-white">
       {/* Elemento Audio HTML5 global */}
       <audio ref={audioRef} onEnded={() => setIsPlaying(false)} />
 
