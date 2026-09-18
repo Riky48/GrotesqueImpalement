@@ -60,7 +60,7 @@ export default function Hero() {
 
         {/* DESCRIPCIÓN */}
         <p className="text-zinc-300 text-xs md:text-xl max-w-xl mx-auto font-normal leading-relaxed mt-3 px-2">
-          Brutalidad, técnica y devastación. Escuchá el nuevo material o conseguí tus entradas.
+          Brutalidad, técnica y Groove. Escuchá el nuevo material o conseguí tus entradas.
         </p>
 
         {/* BOTONES */}
