@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Ticket, Disc } from 'lucide-react';
 
+// IMPORTAMOS AMBAS IMÁGENES DESDE ASSETS
+import heroBgDesktop from '../assets/band-hero-bg.jpg';
+import heroBgMobile from '../assets/hero-mobile.jpg';
+
 export default function Hero() {
   const [loaded, setLoaded] = useState(false);
 
@@ -11,22 +15,28 @@ export default function Hero() {
   return (
     <header className="relative min-h-[calc(100vh-80px)] mt-20 flex flex-col items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-950/70 via-zinc-950 to-zinc-950 border-b border-cyan-900/40 overflow-hidden py-10">
       
-      {/* FOTO DE FONDO EN B&N CON TRANSICIÓN DE ENTRADA Y TRANSPARENCIA */}
+      {/* CAPA DE FOTOS DE FONDO RESPONSIVAS */}
       <div 
         className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-out ${
           loaded ? 'opacity-50' : 'opacity-0'
         }`}
       >
+        {/* FOTO VERTICAL PARA CELULAR (se muestran los 3 integrantes) */}
         <img 
-          src="/band-hero-bg.jpg" 
-          alt="Grotesque Impalement Live" 
-          className="w-full h-full object-cover filter grayscale contrast-125"
-          onError={(e) => {
-            // Placeholder si aún no subiste la foto local
-            e.currentTarget.src = "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&q=80";
-          }}
+          src={heroBgMobile} 
+          alt="Grotesque Impalement Mobile" 
+          className="block md:hidden w-full h-full object-cover object-center filter grayscale contrast-125 brightness-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-zinc-950" />
+
+        {/* FOTO HORIZONTAL PARA PANTALLAS GRANDES / PC */}
+        <img 
+          src={heroBgDesktop} 
+          alt="Grotesque Impalement Desktop" 
+          className="hidden md:block w-full h-full object-cover object-center filter grayscale contrast-125 brightness-90"
+        />
+
+        {/* DEGRADADO SUTIL PARA MANTENER LA LEGIBILIDAD DEL LOGO Y TEXTO */}
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-zinc-950/70" />
       </div>
 
       {/* AURA AZUL NEÓN */}
@@ -34,7 +44,7 @@ export default function Hero() {
 
       <div className="max-w-5xl mx-auto text-center px-4 flex flex-col items-center justify-center z-10 w-full">
         
-        {/* LOGO GIGANTE */}
+        {/* LOGO */}
         <div className="w-full flex justify-center items-center">
           <img 
             src="/logo.png" 
@@ -43,7 +53,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* ETIQUETA */}
+        {/* SUBTÍTULO */}
         <span className="-mt-8 md:-mt-14 text-cyan-400 font-extrabold uppercase tracking-[0.2em] text-xs md:text-sm bg-zinc-950/90 px-4 py-1.5 rounded border border-cyan-500/60 shadow-[0_0_20px_rgba(6,182,212,0.3)] z-20">
           Death Metal — Olavarría, Argentina
         </span>
@@ -53,7 +63,7 @@ export default function Hero() {
           Brutalidad, técnica y devastación. Escuchá el nuevo material o conseguí tus entradas para las próximas fechas.
         </p>
 
-        {/* BOTONES */}
+        {/* BOTONES DE ACCIÓN */}
         <div className="flex flex-wrap justify-center gap-4 mt-6 z-20">
           <a 
             href="#shows" 

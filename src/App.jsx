@@ -42,13 +42,13 @@ export default function App() {
   };
 
   const handleClosePlayer = () => {
-  if (audioRef.current) {
-    audioRef.current.pause();
-    audioRef.current.currentTime = 0;
-  }
-  setIsPlaying(false);
-  setCurrentTrack(null);
-};
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+    setIsPlaying(false);
+    setCurrentTrack(null);
+  };
 
   return (
     <div className="bg-zinc-950 text-zinc-100 min-h-screen font-sans selection:bg-cyan-900 selection:text-white">
@@ -67,8 +67,12 @@ export default function App() {
       />
       
       <ShowsSection shows={SHOWS_DATA} />
-      <MerchSection merchItems={MERCH_DATA} />
-      <GallerySection images={GALLERY_DATA} />
+      
+      {/* CORREGIDO: Prop 'merch' */}
+      <MerchSection merch={MERCH_DATA} />
+      
+      {/* CORREGIDO: Prop 'gallery' */}
+      <GallerySection gallery={GALLERY_DATA} />
       
       <Footer />
 

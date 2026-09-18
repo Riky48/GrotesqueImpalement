@@ -7,9 +7,9 @@ export default function BioSection() {
       <div className="max-w-5xl mx-auto px-4 space-y-12">
         
         {/* FOTO PRINCIPAL DE LA BANDA ARRIBA */}
-        <div className="w-full h-80 md:h-[450px] rounded-xl overflow-hidden border border-cyan-500/30 shadow-[0_0_30px_rgba(6,182,212,0.15)] relative">
+        <div className="w-full h-80 md:h-[500px] rounded-xl overflow-hidden border border-cyan-500/30 shadow-[0_0_30px_rgba(6,182,212,0.15)] relative">
           <img 
-            src="/band-photo.jpg" 
+            src="/band-photo1.jpg" 
             alt="Grotesque Impalement Band" 
             className="w-full h-full object-cover filter grayscale contrast-110 hover:grayscale-0 transition-all duration-700"
             onError={(e) => {
@@ -26,7 +26,7 @@ export default function BioSection() {
               Biografía
             </h2>
             <p className="text-zinc-300 leading-relaxed">
-              Formados en agosto de 2010 en Olavarría, Buenos Aires, **Grotesque Impalement** se ha consolidado como uno de los referentes del Death Metal extremo de la región.
+              Formados en agosto de 2010 en Olavarría, Buenos Aires, Grotesque Impalement se ha consolidado como uno de los referentes del Death Metal extremo de la región.
             </p>
             <p className="text-zinc-400 text-sm leading-relaxed">
               Con múltiples lanzamientos independientes, giras nacionales y la autogestión del clásico festival *Grotesque Fest*, la banda continúa expandiendo su sonido crudo, veloz e implacable.
@@ -42,7 +42,8 @@ export default function BioSection() {
             </div>
             <a 
               href="/epk-grotesque-impalement.pdf" 
-              download 
+              target="_blank" rel="noreferrer"
+              download="EPK_Grotesque_Impalement.pdf"
               className="w-full bg-cyan-500 hover:bg-cyan-400 text-zinc-950 font-black py-2.5 px-4 rounded text-xs uppercase tracking-wider transition shadow-[0_0_15px_rgba(6,182,212,0.3)] flex items-center justify-center gap-2"
             >
               Descargar EPK (PDF)
