@@ -1,5 +1,5 @@
-import flyer1 from '../assets/flyer2.webp';
-import flyer2 from '../assets/flyer1.webp';
+import flyer1 from '../assets/flyer1.webp';
+import flyer2 from '../assets/flyer2.webp';
 import remeraIWH from '../assets/remera.webp';
 import cdDigipackMFC from '../assets/morbid.webp';
 import cdCOMC from '../assets/cemetery.webp';
