@@ -1,6 +1,9 @@
 import flyer1 from '../assets/flyer1.webp';
 import flyer2 from '../assets/flyer2.webp';
-import remeraIWH from '../assets/remera.webp';
+import remeraIWH from '../assets/remera-impaled.webp';
+import remeraMFC from '../assets/remera-morbid.webp';
+import remeraCOMC from '../assets/remera-cemetery.webp';
+import remeraM from '../assets/remera-murderer.webp';
 import cdDigipackMFC from '../assets/morbid.webp';
 import cdCOMC from '../assets/cemetery.webp';
 import cdIWHBack from '../assets/impaled-back.webp';
@@ -104,7 +107,29 @@ export const MERCH_DATA = [
     price: "$55.000",
     image: buzoCR,
     sizes: ["Cuadruple Estampa","del S al 3XL"]
+  },
+  {
+    id: 4,
+    name: "Remera Morbid Fetal Creation",
+    price: "$35.000",
+    image: remeraMFC,
+    sizes: ["Doble Estampa","del S al 3XL"]
+  },
+  {
+    id: 5,
+    name: "Remera Cementery of Mutilated Corpses",
+    price: "$35.000",
+    image: remeraCOMC,
+    sizes: ["Doble Estampa","del S al 3XL"]
+  },
+  {
+    id: 6,
+    name: "Remera Murderer Instinct",
+    price: "$35.000",
+    image: remeraM,
+    sizes: ["Doble Estampa","del S al 3XL"]
   }
+  
 ];
 
 export const GALLERY_DATA = [
