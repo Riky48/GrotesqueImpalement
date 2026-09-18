@@ -5,8 +5,8 @@ export default function ShowsSection({ shows = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  // NÚMERO DE WHATSAPP DE LA BANDA (Código de país + área sin + ni espacios)
-  const BAND_WHATSAPP_NUMBER = "5492284000000";
+  
+  const BAND_WHATSAPP_NUMBER = "5492284269949";
 
   useEffect(() => {
     if (isPaused || shows.length <= 1) return;
@@ -86,7 +86,7 @@ export default function ShowsSection({ shows = [] }) {
 
                 <div className="pt-4 border-t border-zinc-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   <div className="text-xs text-zinc-400 font-mono space-y-1">
-                    <p>• Puertas: 21:00 hs</p>
+                    <p>• Puertas: {currentShow.doorTime}</p>
                     <p>• Show apto para mayores de 18 años</p>
                   </div>
 

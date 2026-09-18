@@ -1,5 +1,5 @@
-import flyerFestX from '../assets/flyer-grotesque-fest-vol-x.webp';
-import flyerUniclub from '../assets/flyer-grotesque-fest-vol-ii.webp';
+import flyer1 from '../assets/flyer2.webp';
+import flyer2 from '../assets/flyer1.webp';
 import remeraIWH from '../assets/remera.webp';
 import cdDigipackMFC from '../assets/morbid.webp';
 import cdCOMC from '../assets/cemetery.webp';
@@ -26,19 +26,21 @@ import photo13 from '../assets/photo13.webp';
 export const SHOWS_DATA = [
   {
     id: 1,
-    date: "17 OCT 2026",
-    city: "Olavarría, Bs. As.",
-    venue: "Grotesque Fest - Vol. X",
-    flyer: flyerFestX,
-    ticketUrl: "https://mercadopago.com.ar",
+    date: "04 DIC 2026",
+    city: "Montevideo, Uruguay",
+    venue: "Centro Cultural Mandragora",
+    flyer: flyer1,
+    doorTime: "20:30 hs",
+    ticketUrl: "",
     soldOut: false
   },
   {
     id: 2,
-    date: "07 NOV 2026",
-    city: "Buenos Aires",
-    venue: "Uniclub",
-    flyer: flyerUniclub,
+    date: "05 DIC 2026",
+    city: "CABA, Argentina",
+    venue: "Espacio Rincon",
+    flyer: flyer2,
+    doorTime: "00:00 hs",
     ticketUrl: "https://passline.com",
     soldOut: false
   }
@@ -52,30 +54,31 @@ export const ALBUMS_DATA = [
     type: "Full-Length Album",
     cover: cdIWH,
     backCover: cdIWHBack,
-    // Pegá acá el ID real de 22 caracteres de Spotify
     spotifyId: "0nrr7QfUNHovngY6QLd6yd", 
     bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/impaled-with-hate"
-    // ELIMINADO: tracks, audioUrl, duration (los maneja Spotify)
+    
   },
   {
     id: "mfc-2021",
     title: "Morbid Fetal Creation",
-    // ...
+    year: "2021",
+    type: "Full-Length Album",
     cover: cdDigipackMFC,
     backCover: cdDigipackMFCBack,
     spotifyId: "1M7X27cmMECXBnH9qNHlLT",
     bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/morbid-fetal-creation"
-    // ELIMINADO: tracks, audioUrl
+   
   },
   {
     id: "comc-2017",
     title: "Cemetery of Mutilated Corpses",
-    // ...
+    year: "2017",
+    type: "EP",
     cover: cdCOMC,
     backCover: cdCOMCBack,
     spotifyId: "2DI1Kx0n5WbfaVLvLX9rfe",
     bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/cementery-of-mutilated-corpses-ep"
-    // ELIMINADO: tracks, audioUrl
+   
   }
 ];
 
@@ -86,11 +89,11 @@ export const MERCH_DATA = [
     name: "Remera Impaled With Hate",
     price: "$35.000",
     image: remeraIWH,
-    sizes: ["Doble Estampa","S", "M", "L", "XL", "XXL", "2XXL", "3XXL"]
+    sizes: ["Doble Estampa","del S al 3XL"]
   },
   {
     id: 2,
-    name: "CD Digipack Morbid Fetal Creation",
+    name: "CD Morbid Fetal Creation",
     price: "$18.000",
     image: cdDigipackMFC,
     sizes: ["Edición Limitada"]
@@ -100,7 +103,7 @@ export const MERCH_DATA = [
     name: "Buzo Canguro Craneal Rot",
     price: "$55.000",
     image: buzoCR,
-    sizes: ["Cuadruple Estampa","S", "M", "L", "XL", "XXL", "2XXL", "3XXL"]
+    sizes: ["Cuadruple Estampa","del S al 3XL"]
   }
 ];
 
