@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Disc, ExternalLink, Play, Volume2 } from 'lucide-react';
 
 export default function DiscographySection({ albums = [] }) {
-  
+  // Por defecto, activamos el primer disco (el lanzamiento más reciente)
   const [activeAlbumId, setActiveAlbumId] = useState(albums[0]?.id || null);
 
   return (
@@ -23,7 +23,7 @@ export default function DiscographySection({ albums = [] }) {
                   isActive ? 'border-cyan-500/60 shadow-[0_0_25px_rgba(6,182,212,0.15)]' : 'border-zinc-800 hover:border-zinc-700'
                 }`}
               >
-                /* PORTADA FÍSICA DEL DISCO */
+                {/* PORTADA FÍSICA DEL DISCO */}
                 <div className="w-full md:w-80 h-72 md:h-80 flex-shrink-0 rounded-lg overflow-hidden border border-zinc-800 shadow-md relative bg-zinc-900">
                   <img 
                     src={album.cover} 
@@ -32,7 +32,7 @@ export default function DiscographySection({ albums = [] }) {
                   />
                 </div>
                 
-                /* CONTENIDO Y REPRODUCTOR */
+                {/* CONTENIDO Y REPRODUCTOR */}
                 <div className="flex flex-col justify-between flex-grow w-full">
                   <div>
                     <span className="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest">
@@ -42,7 +42,7 @@ export default function DiscographySection({ albums = [] }) {
                       {album.title}
                     </h3>
                     
-                    /* REPRODUCTOR ÚNICO ACTIVO */
+                    {/* REPRODUCTOR ÚNICO ACTIVO */}
                     {album.spotifyId && (
                       <div className="w-full my-3">
                         {isActive ? (
@@ -77,7 +77,7 @@ export default function DiscographySection({ albums = [] }) {
                     )}
                   </div>
 
-                  /* BOTÓN BANDCAMP */
+                  {/* BOTÓN BANDCAMP */}
                   <div className="pt-4 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-end gap-4 mt-4">
                     <a 
                       href={album.bandcampUrl}
