@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Compensación por la altura del Navbar */
+}
 body {
   background-color: #09090b;
   color: #f4f4f5;

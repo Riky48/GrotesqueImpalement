@@ -11,10 +11,10 @@ export default function Navbar() {
         {/* EMBLEMA IZQUIERDO CON GLOW VERDE */}
         <a href="#" className="flex items-center group">
           <img 
-            src="/emblema.png" 
+            src="/emblema.webp" 
             alt="Grotesque Impalement Emblem" 
             className="h-10 md:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-110 drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]"
-            onError={(e) => { e.currentTarget.src = "/logo.png"; }}
+            onError={(e) => { e.currentTarget.src = "/logo.webp"; }}
           />
         </a>
 
@@ -31,10 +31,10 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <a href="#" className="hidden md:block group">
             <img 
-              src="/emblema.png" 
+              src="/emblema.webp" 
               alt="Grotesque Impalement Emblem" 
               className="h-10 md:h-12 w-auto object-contain transition-all duration-300 group-hover:scale-110 drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]"
-              onError={(e) => { e.currentTarget.src = "/logo.png"; }}
+              onError={(e) => { e.currentTarget.src = "/logo.webp"; }}
             />
           </a>
 

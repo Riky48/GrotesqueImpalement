@@ -9,7 +9,7 @@ export default function BioSection() {
         {/* FOTO PRINCIPAL DE LA BANDA ARRIBA */}
         <div className="w-full h-80 md:h-[500px] rounded-xl overflow-hidden border border-cyan-500/30 shadow-[0_0_30px_rgba(6,182,212,0.15)] relative">
           <img 
-            src="/band-photo1.jpg" 
+            src="/band-photo1.webp" 
             alt="Grotesque Impalement Band" 
             className="w-full h-full object-cover filter grayscale contrast-110 hover:grayscale-0 transition-all duration-700"
             onError={(e) => {
