@@ -31,7 +31,7 @@ export default function Footer() {
     <footer className="bg-zinc-950 border-t border-zinc-800/80 pt-16 pb-12 text-zinc-400">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10 items-center border-b border-zinc-900 pb-12">
         
-        {/* COLUMNA 1: LOGO Y CIUDAD */}
+        /* COLUMNA 1: LOGO Y CIUDAD */
         <div className="space-y-3 text-center md:text-left">
           <h3 className="text-xl font-black uppercase text-white tracking-wider flex items-center justify-center md:justify-start gap-2">
             <span className="text-cyan-400">GROTESQUE</span> IMPALEMENT
@@ -41,7 +41,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* COLUMNA 2: REDES SOCIALES */}
+        /* COLUMNA 2: REDES SOCIALES */
         <div className="flex justify-center items-center gap-4">
           <a 
             href="https://instagram.com/grotesqueimpalement.arg" 
@@ -81,7 +81,7 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* COLUMNA 3: CONTACTO / BOOKING */}
+        /* COLUMNA 3: CONTACTO / BOOKING */
         <div className="text-center md:text-right space-y-2">
           <p className="text-xs font-mono uppercase text-cyan-400 font-bold tracking-widest">
             Booking & Prensa
@@ -104,7 +104,7 @@ export default function Footer() {
 
       </div>
 
-      {/* COPYRIGHT */}
+      /* COPYRIGHT */
       <div className="max-w-6xl mx-auto px-4 mt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] font-mono text-zinc-600 gap-2">
         <p>© 2026 Grotesque Impalement. Todos los derechos reservados.</p>
         <p className="text-zinc-500">Autogestión & Death Metal Regional</p>

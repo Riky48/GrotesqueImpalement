@@ -12,7 +12,7 @@ export default function GallerySection({ gallery }) {
           <Camera /> Galería en Vivo
         </h2>
 
-        {/* GRID ADAPTATIVO: 1 COLUMNA EN CELULARES, HASTA 4 EN PANTALLAS GRANDES */}
+        /* GRID ADAPTATIVO: 1 COLUMNA EN CELULARES, HASTA 4 EN PANTALLAS GRANDES */
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {gallery.map((photo, idx) => (
             <div 
@@ -36,7 +36,7 @@ export default function GallerySection({ gallery }) {
 
       </div>
 
-      {/* MODAL LIGHTBOX PARA VER LA FOTO EN PANTALLA COMPLETA */}
+      /* MODAL LIGHTBOX PARA VER LA FOTO EN PANTALLA COMPLETA */
       {selectedImage && (
         <div 
           className="fixed inset-0 bg-zinc-950/90 backdrop-blur-md z-50 flex items-center justify-center p-4"
