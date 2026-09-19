@@ -57,7 +57,7 @@ export const ALBUMS_DATA = [
     type: "Full-Length Album",
     cover: cdIWH,
     backCover: cdIWHBack,
-    spotifyId: "0nrr7QfUNHovngY6QLd6yd", 
+    bandcampAlbumId: "64582589", 
     bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/impaled-with-hate"
     
   },
@@ -68,7 +68,7 @@ export const ALBUMS_DATA = [
     type: "Full-Length Album",
     cover: cdDigipackMFC,
     backCover: cdDigipackMFCBack,
-    spotifyId: "1M7X27cmMECXBnH9qNHlLT",
+    bandcampAlbumId: "1317156694",
     bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/morbid-fetal-creation"
    
   },
@@ -79,7 +79,7 @@ export const ALBUMS_DATA = [
     type: "EP",
     cover: cdCOMC,
     backCover: cdCOMCBack,
-    spotifyId: "2DI1Kx0n5WbfaVLvLX9rfe",
+    bandcampAlbumId: "2747013865",
     bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/cementery-of-mutilated-corpses-ep"
    
   }
