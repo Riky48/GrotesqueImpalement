@@ -5,7 +5,7 @@ import BioSection from "./components/BioSection";
 import DiscographySection from "./components/DiscographySection";
 import ShowsSection from "./components/ShowsSection";
 import MerchSection from "./components/MerchSection";
-import GallerySection from "../components/GallerySection";
+import GallerySection from "./components/GallerySection";
 import AudioPlayer from "./components/AudioPlayer";
 import Footer from "./components/Footer";
 
@@ -14,7 +14,7 @@ import {
   SHOWS_DATA,
   MERCH_DATA,
   GALLERY_DATA,
-} from "../data/bandData";
+} from "./data/bandData";
 
 export default function App() {
   const [currentTrack, setCurrentTrack] = useState(null);
