@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Compensación por la altura del Navbar */
+  scroll-padding-top: 80px; 
 }
 body {
   background-color: #09090b;

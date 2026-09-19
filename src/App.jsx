@@ -5,11 +5,11 @@ import BioSection from './components/BioSection';
 import DiscographySection from './components/DiscographySection';
 import ShowsSection from './components/ShowsSection';
 import MerchSection from './components/MerchSection';
-import GallerySection from './components/GallerySection';
+import GallerySection from '../components/GallerySection';
 import AudioPlayer from './components/AudioPlayer';
 import Footer from './components/Footer';
 
-import { ALBUMS_DATA, SHOWS_DATA, MERCH_DATA, GALLERY_DATA } from './data/bandData';
+import { ALBUMS_DATA, SHOWS_DATA, MERCH_DATA, GALLERY_DATA } from '../data/bandData';
 
 export default function App() {
   const [currentTrack, setCurrentTrack] = useState(null);
@@ -52,7 +52,7 @@ export default function App() {
 
   return (
     <div className="bg-zinc-950 text-zinc-100 min-h-screen font-sans selection:bg-cyan-900 selection:text-white">
-      {/* Elemento Audio HTML5 global */}
+      
       <audio ref={audioRef} onEnded={() => setIsPlaying(false)} />
 
       <Navbar />
@@ -68,10 +68,10 @@ export default function App() {
       
       <ShowsSection shows={SHOWS_DATA} />
       
-      {/* CORREGIDO: Prop 'merch' */}
+      
       <MerchSection merch={MERCH_DATA} />
       
-      {/* CORREGIDO: Prop 'gallery' */}
+      
       <GallerySection gallery={GALLERY_DATA} />
       
       <Footer />

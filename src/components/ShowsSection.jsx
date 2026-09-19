@@ -53,7 +53,7 @@ export default function ShowsSection({ shows = [] }) {
           {shows.length > 0 && currentShow && (
             <div className="flex flex-col lg:flex-row items-center gap-8">
               
-              {/* CAJA DEL FLYER CON OBJECT-CONTAIN */}
+              
               <div className="w-full lg:w-64 h-80 flex-shrink-0 rounded-lg overflow-hidden border border-cyan-500/40 relative shadow-lg bg-zinc-950 flex items-center justify-center group">
                 <img 
                   src={currentShow.flyer} 
@@ -72,7 +72,7 @@ export default function ShowsSection({ shows = [] }) {
                 )}
               </div>
 
-              {/* DETALLES Y BOTÓN WHATSAPP */}
+              
               <div className="flex flex-col justify-between flex-grow w-full space-y-6">
                 <div className="space-y-3">
                   <div className="inline-block bg-zinc-950 border border-cyan-500/50 px-4 py-1.5 rounded text-cyan-400 font-mono font-bold text-sm shadow-[0_0_12px_rgba(6,182,212,0.15)]">
@@ -113,7 +113,7 @@ export default function ShowsSection({ shows = [] }) {
             </div>
           )}
 
-          {/* CONTROLES DEL CARRUSEL */}
+          
           {shows.length > 1 && (
             <div className="flex justify-between items-center mt-8 pt-6 border-t border-zinc-800/80">
               <div className="flex gap-2">

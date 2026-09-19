@@ -6,7 +6,7 @@ export default function BioSection() {
     <section id="bio" className="py-20 border-b border-zinc-800/80 bg-zinc-950">
       <div className="max-w-5xl mx-auto px-4 space-y-12">
         
-        {/* FOTO PRINCIPAL DE LA BANDA ARRIBA */}
+        
         <div className="w-full h-80 md:h-[500px] rounded-xl overflow-hidden border border-cyan-500/30 shadow-[0_0_30px_rgba(6,182,212,0.15)] relative">
           <img 
             src="/band-photo1.webp" 
@@ -19,7 +19,7 @@ export default function BioSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
         </div>
 
-        {/* TEXTO DE BIO Y EPK ABAJO */}
+        
         <div className="grid md:grid-cols-3 gap-10 items-start">
           <div className="md:col-span-2 space-y-4">
             <h2 className="text-3xl font-black uppercase tracking-wider text-cyan-400 flex items-center gap-2">
@@ -33,7 +33,7 @@ export default function BioSection() {
             </p>
           </div>
           
-          {/* TARJETA DESCARGA EPK */}
+          
           <div className="bg-zinc-900/90 border border-cyan-500/40 p-6 rounded-lg text-center flex flex-col items-center justify-center space-y-4 shadow-xl">
             <Download size={36} className="text-cyan-400 animate-bounce" />
             <div>

@@ -26,13 +26,13 @@ function AlbumArtwork({ cover, backCover, title }) {
           className="w-full h-full object-cover transition-all duration-700 filter contrast-105"
         />
         
-        {/* ETIQUETA INDICADORA DE VISTA */}
+        
         <div className="absolute top-3 left-3 bg-zinc-950/90 text-cyan-400 font-mono text-[10px] uppercase font-bold px-2.5 py-1 rounded border border-cyan-500/40 shadow-md">
           {showBack ? 'Contratapa' : 'Tapa Oficial'}
         </div>
       </div>
 
-      {/* BOTÓN MANUAL PARA CAMBIAR TAPA / CONTRATAPA */}
+      
       {backCover && (
         <button
           onClick={() => setShowBack(!showBack)}
@@ -61,7 +61,7 @@ export default function DiscographySection({ albums = [] }) {
               key={album.id} 
               className="bg-zinc-950 border border-zinc-800 hover:border-cyan-500/40 rounded-xl p-6 md:p-8 transition duration-300 shadow-2xl relative overflow-hidden"
             >
-              {/* CABECERA DEL ÁLBUM */}
+              
               <div className="mb-6">
                 <span className="text-xs font-mono text-cyan-400 font-bold uppercase tracking-widest">
                   {album.type} • {album.year}
@@ -71,10 +71,10 @@ export default function DiscographySection({ albums = [] }) {
                 </h3>
               </div>
 
-              {/* GRID: REPRODUCTOR (IZQ) Y FOTOS INTERCALADAS (DER) */}
+              
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
-                {/* REPRODUCTOR BANDCAMP (7 COLUMNAS) */}
+                
                 <div className="lg:col-span-7 w-full">
                   {album.bandcampAlbumId && (
                     <div className="w-full rounded-lg overflow-hidden border border-cyan-500/30 bg-zinc-900/80 shadow-lg">
@@ -88,7 +88,7 @@ export default function DiscographySection({ albums = [] }) {
                   )}
                 </div>
 
-                {/* VISO DE TAPA / CONTRATAPA (5 COLUMNAS) */}
+                
                 <div className="lg:col-span-5 w-full flex justify-center">
                   <AlbumArtwork 
                     cover={album.cover} 
@@ -99,7 +99,7 @@ export default function DiscographySection({ albums = [] }) {
 
               </div>
 
-              {/* BOTÓN BANDCAMP ABAJO */}
+              
               <div className="mt-8 pt-6 border-t border-zinc-800/80 flex justify-end">
                 <a 
                   href={album.bandcampUrl}
