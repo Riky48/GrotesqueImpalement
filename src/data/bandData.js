@@ -1,30 +1,29 @@
-import flyer1 from '../assets/flyer1.webp';
-import flyer2 from '../assets/flyer2.webp';
-import remeraIWH from '../assets/remera-impaled.webp';
-import remeraMFC from '../assets/remera-morbid.webp';
-import remeraCOMC from '../assets/remera-cemetery.webp';
-import remeraM from '../assets/remera-murderer.webp';
-import cdDigipackMFC from '../assets/morbid.webp';
-import cdCOMC from '../assets/cemetery.webp';
-import cdIWHBack from '../assets/impaled-back.webp';
-import cdDigipackMFCBack from '../assets/morbid-back.webp';
-import cdCOMCBack from '../assets/cemetery-back.webp';
-import buzoCR from '../assets/buzo-cr.webp';
-import cdIWH from '../assets/impaled.webp';
-import photo1 from '../assets/photo1.webp';
-import photo2 from '../assets/photo2.webp';
-import photo3 from '../assets/photo3.webp';
-import photo4 from '../assets/photo4.webp';
-import photo5 from '../assets/photo5.webp';
-import photo6 from '../assets/photo6.webp';
-import photo7 from '../assets/photo7.webp';
-import photo8 from '../assets/photo8.webp';
-import photo9 from '../assets/photo9.webp';
-import photo10 from '../assets/photo10.webp';
-import photo11 from '../assets/photo11.webp';
-import photo12 from '../assets/photo12.webp';
-import photo13 from '../assets/photo13.webp';
-
+import flyer1 from "../assets/flyer1.webp";
+import flyer2 from "../assets/flyer2.webp";
+import remeraIWH from "../assets/remera-impaled.webp";
+import remeraMFC from "../assets/remera-morbid.webp";
+import remeraCOMC from "../assets/remera-cemetery.webp";
+import remeraM from "../assets/remera-murderer.webp";
+import cdDigipackMFC from "../assets/morbid.webp";
+import cdCOMC from "../assets/cemetery.webp";
+import cdIWHBack from "../assets/impaled-back.webp";
+import cdDigipackMFCBack from "../assets/morbid-back.webp";
+import cdCOMCBack from "../assets/cemetery-back.webp";
+import buzoCR from "../assets/buzo-cr.webp";
+import cdIWH from "../assets/impaled.webp";
+import photo1 from "../assets/photo1.webp";
+import photo2 from "../assets/photo2.webp";
+import photo3 from "../assets/photo3.webp";
+import photo4 from "../assets/photo4.webp";
+import photo5 from "../assets/photo5.webp";
+import photo6 from "../assets/photo6.webp";
+import photo7 from "../assets/photo7.webp";
+import photo8 from "../assets/photo8.webp";
+import photo9 from "../assets/photo9.webp";
+import photo10 from "../assets/photo10.webp";
+import photo11 from "../assets/photo11.webp";
+import photo12 from "../assets/photo12.webp";
+import photo13 from "../assets/photo13.webp";
 
 export const SHOWS_DATA = [
   {
@@ -35,7 +34,7 @@ export const SHOWS_DATA = [
     flyer: flyer1,
     doorTime: "20:30 hs",
     ticketUrl: "",
-    soldOut: false
+    soldOut: false,
   },
   {
     id: 2,
@@ -45,8 +44,8 @@ export const SHOWS_DATA = [
     flyer: flyer2,
     doorTime: "00:00 hs",
     ticketUrl: "https://passline.com",
-    soldOut: false
-  }
+    soldOut: false,
+  },
 ];
 
 export const ALBUMS_DATA = [
@@ -57,9 +56,9 @@ export const ALBUMS_DATA = [
     type: "Full-Length Album",
     cover: cdIWH,
     backCover: cdIWHBack,
-    bandcampAlbumId: "64582589", 
-    bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/impaled-with-hate"
-    
+    bandcampAlbumId: "64582589",
+    bandcampUrl:
+      "https://grotesqueimpalement.bandcamp.com/album/impaled-with-hate",
   },
   {
     id: "mfc-2021",
@@ -69,8 +68,8 @@ export const ALBUMS_DATA = [
     cover: cdDigipackMFC,
     backCover: cdDigipackMFCBack,
     bandcampAlbumId: "1317156694",
-    bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/morbid-fetal-creation"
-   
+    bandcampUrl:
+      "https://grotesqueimpalement.bandcamp.com/album/morbid-fetal-creation",
   },
   {
     id: "comc-2017",
@@ -80,11 +79,10 @@ export const ALBUMS_DATA = [
     cover: cdCOMC,
     backCover: cdCOMCBack,
     bandcampAlbumId: "2747013865",
-    bandcampUrl: "https://grotesqueimpalement.bandcamp.com/album/cementery-of-mutilated-corpses-ep"
-   
-  }
+    bandcampUrl:
+      "https://grotesqueimpalement.bandcamp.com/album/cementery-of-mutilated-corpses-ep",
+  },
 ];
-
 
 export const MERCH_DATA = [
   {
@@ -92,51 +90,50 @@ export const MERCH_DATA = [
     name: "Remera Impaled With Hate",
     price: "$35.000",
     image: remeraIWH,
-    sizes: ["Doble Estampa","del S al 3XL"]
+    sizes: ["Doble Estampa", "del S al 3XL"],
   },
   {
     id: 2,
     name: "CD Morbid Fetal Creation",
     price: "$18.000",
     image: cdDigipackMFC,
-    sizes: ["Edición Limitada"]
+    sizes: ["Edición Limitada"],
   },
   {
     id: 3,
     name: "Buzo Canguro Craneal Rot",
     price: "$55.000",
     image: buzoCR,
-    sizes: ["Cuadruple Estampa","del S al 3XL"]
+    sizes: ["Cuadruple Estampa", "del S al 3XL"],
   },
   {
     id: 4,
     name: "Remera Morbid Fetal Creation",
     price: "$35.000",
     image: remeraMFC,
-    sizes: ["Doble Estampa","del S al 3XL"]
+    sizes: ["Doble Estampa", "del S al 3XL"],
   },
   {
     id: 5,
     name: "Remera Cementery of Mutilated Corpses",
     price: "$35.000",
     image: remeraCOMC,
-    sizes: ["Doble Estampa","del S al 3XL"]
+    sizes: ["Doble Estampa", "del S al 3XL"],
   },
   {
     id: 6,
     name: "Remera Murderer Instinct",
     price: "$35.000",
     image: remeraM,
-    sizes: ["Doble Estampa","del S al 3XL"]
-  }
-  
+    sizes: ["Doble Estampa", "del S al 3XL"],
+  },
 ];
 
 export const GALLERY_DATA = [
   photo1,
   photo2,
-  photo3, 
-  photo4, 
+  photo3,
+  photo4,
   photo5,
   photo6,
   photo7,
@@ -145,5 +142,7 @@ export const GALLERY_DATA = [
   photo10,
   photo11,
   photo12,
-  photo13
+  photo13,
 ];
+
+export const WHATSAPP_CONTACT = "5492284269949";
